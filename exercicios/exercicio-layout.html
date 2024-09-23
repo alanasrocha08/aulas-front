@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><Em>Exercício-Treinando layout</Em></title>
+
+    <style>
+        *,
+        *::after,
+        *::before {
+            box-sizing: border-box;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: white;
+        }
+
+        body,
+        h1,
+        h2,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            background-image: linear-gradient(#a05ba7, #7d3984, #591761);
+            box-shadow:black 0 0 10px;
+            padding: 1%;
+            text-align: center;
+        }
+
+        .topo{
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            height: 80px;
+            align-items: center;
+        }
+
+        .menu{
+            background-color: black;
+            width: 50%;
+            height: 50px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .conteudo{
+            flex-direction: row;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        article{
+            background-color: white;
+            width: 40%;
+        }
+        img {max-width:100%}
+
+        .rodape{
+            background-color: beige;
+        }
+
+        h2,
+        p {
+            padding: 0.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+        .emoji{
+            font-size: 3rem;
+        }
+
+        .titulo{
+            display: none;
+        }
+
+
+
+        @media screen and (min-width:640px) {
+        
+            .titulo{
+                display: block;
+            }
+        }
+
+        @media screen and (min-width: 800px) {
+            article{
+            background-color: white;
+            width: 30%;
+        }
+        .topo{
+            background-color: transparent;
+            display: flex;
+                justify-content: space-between;
+                height: 80px;
+                align-items: center;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="topo">
+            
+            <span class="emoji">🐱‍🐉</span>
+            <h1 class="titulo">Exercício</h1>
+            <nav class="menu">
+                <a href="">Link 1</a>
+                <a href="">Link 2</a>
+                <a href="">Link 3</a>
+                <a href="">Link 4</a>
+            </nav>
+        </header>
+        
+        <main class="conteudo">
+            <article class="cachorro">
+                <img src="../imagens para o exercicio/cachorro.jpg" alt="cachorro">
+                <h2>Cachorro</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore fugit minima aliquam. Culpa
+                    corporis odit cupiditate id natus modi?</p>
+            </article>
+            <article class="cidade">
+                <img src="../imagens para o exercicio/cidade.jpg" alt="cidade">
+                <h2>Cidade</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore fugit minima aliquam. Culpa
+                    corporis odit cupiditate id natus modi?</p>
+            </article>
+            <article class="escadas">
+                <img src="../imagens para o exercicio/escadas.jpg" alt="escadas">
+                <h2>Escadas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore fugit minima aliquam. Culpa
+                    corporis odit cupiditate id natus modi?</p>
+            </article>
+            <article class="trilhos">
+                <img src="../imagens para o exercicio/trilhos.jpg" alt="trilhos">
+                <h2>Trilhos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore fugit minima aliquam. Culpa
+                    corporis odit cupiditate id natus modi?</p>
+            </article>
+            <article class="montanhas">
+                <img src="../imagens para o exercicio/montanhas.jpg" alt="montanhas">
+                <h2>Montanhas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore fugit minima aliquam. Culpa
+                    corporis odit cupiditate id natus modi?</p>
+            </article>
+            <article class="luzes">
+                <img src="../imagens para o exercicio/luzes.jpg" alt="luzes">
+                <h2>Luzes</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore fugit minima aliquam. Culpa
+                    corporis odit cupiditate id natus modi?</p>
+            </article>
+        </div>
+        </main>
+    
+
+        <footer class="rodape">
+            <h2>Entre em contato conosco</h2>
+            <a href="">(11) 2135-0300</a>
+            <a href="">teste@teste.com</a>
+        </footer>
+    
+
+</body>
+
+</html>
